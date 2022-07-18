@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="sticky top-0 bg-white flex w-screen items-center h-14 shadow-2xl">
       <div className="flex flex-[0.4_0_0%] font-medium text-2xl ml-4">
-        OpenSouce Chandigarh
+        OpenSource Chandigarh
       </div>
       <div className="flex flex-[0.2_0_0%] flex-row items-center text-lg justify-between">
         <Link to={"/"}>Home</Link>
