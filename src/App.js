@@ -1,5 +1,6 @@
 import React from 'react'
 import Community from './components/Community'
+import Core from './components/Core'
 import Main from './components/Main'
 import Navbar from './components/Navbar'
 
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Main />
       <Community />
+      <Core />
     </div>
   )
 }
