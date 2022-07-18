@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Community from './components/Community'
 import Core from './components/Core'
 import Footer from './components/Footer'
@@ -7,6 +7,9 @@ import Navbar from './components/Navbar'
 import Testimonials from './components/Testimonials'
 
 function App() {
+  useEffect(()=>{
+    document.title = "OpenSource Chandigarh"
+  }, [])
   return (
     <div className='box-border'>
       <Navbar />
