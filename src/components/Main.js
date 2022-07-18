@@ -7,7 +7,7 @@ function Main() {
         Open Source Chandigarh Powered by{" "}
         <font className="text-red-500 font-semibold">Chitkara University</font>
       </div>
-      <div className="font-light text-xl text-center">
+      <div className="font-extralight text-xl text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, corrupti tempora! Nobis atque voluptatum magni exercitationem? Aspernatur, excepturi labore rerum aliquid, iusto expedita maxime fuga qui ea autem possimus perspiciatis.
       </div>
       <div className="flex flex-row w-full mt-5 items-center justify-center">
