@@ -3,8 +3,8 @@ import TestCards from './TestCards'
 
 function Testimonials() {
   return (
-    <div className='container m-auto flex flex-col items-center justify-center'>
-        <font className = 'font-thin text-3xl border-b pb-2 px-4 border-b-black'>
+    <div className='container mt-10 m-auto flex flex-col items-center justify-center'>
+        <font className = 'font-thin text-4xl border-b pb-2 px-4 border-b-black'>
             Testimonials
         </font>
         <div className='flex flex-col lg:flex-row md:items-center my-10 justify-between w-full'>

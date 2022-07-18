@@ -7,7 +7,7 @@ function Navbar() {
       <div className="flex flex-[0.4_0_0%] font-medium text-2xl ml-4">
         OpenSource Chandigarh
       </div>
-      <div className="flex flex-[0.2_0_0%] flex-row items-center text-lg justify-between">
+      <div className="hidden md:flex flex-[0.2_0_0%] flex-row items-center text-lg justify-between">
         <Link to={"/"}>Home</Link>
         <Link to={"/"}>Events</Link>
         <Link to={"/"}>Projects</Link>
