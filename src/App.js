@@ -3,6 +3,7 @@ import Community from './components/Community'
 import Core from './components/Core'
 import Main from './components/Main'
 import Navbar from './components/Navbar'
+import Testimonials from './components/Testimonials'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Main />
       <Community />
       <Core />
+      <Testimonials />
     </div>
   )
 }
