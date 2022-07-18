@@ -1,8 +1,10 @@
 import React from "react";
+import heroImg from '../images/work-ic.png'
 
 function Main() {
   return (
-    <div className="container m-auto flex flex-col justify-center items-center mt-10">
+    <div className="container m-auto flex flex-col justify-center items-center mt-2">
+      <img src={heroImg} alt="Hero Banner" className="w-full md:w-[70rem]"/>
       <div className="font-medium text-4xl text-center">
         Open Source Chandigarh Powered by{" "}
         <font className="text-red-500 font-semibold">Chitkara University</font>
