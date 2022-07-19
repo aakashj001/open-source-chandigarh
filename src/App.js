@@ -23,7 +23,7 @@ function App() {
               <Main />
               <Community />
               <Core />
-              <Testimonials />
+              {/* <Testimonials /> */}
             </>
           }
         />
