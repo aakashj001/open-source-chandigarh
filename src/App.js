@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
+import Events from "./components/Events";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,11 @@ function App() {
         <Route path={"/projects"} element = {
           <>
             <Projects />
+          </>
+        } />
+        <Route path = {"/events"} element = {
+          <>
+            <Events />
           </>
         } />
       </Routes>

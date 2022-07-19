@@ -70,7 +70,7 @@ function Navbar() {
       </button>
       <div
         className={`top-16 ${
-          show ? "opacity-1" : "opacity-0"
+          show ? "visible opacity-1" : "invisible opacity-0"
         } absolute left-0 right-0 z-50 space-y-5 flex lg:hidden flex-col text-center transition-all shadow-2xl bg-neutral-800 p-8 text-white`}
       >
         <Link
