@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -62,15 +62,15 @@ function Navbar() {
         </button>
       </div>
 
-      <div
-        className="flex-[0.1_0_0%] lg:hidden justify-end "
+      <button
+        className="flex-[0.2_0_0%] flex pr-5 lg:hidden justify-end "
         onClick={() => setShow(!show)}
       >
-        <AiOutlineMenu size={25} />
-      </div>
+        {show ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={25} />}
+      </button>
       <div
-        className={`top-[3.5rem] ${
-          show ? "flex" : "hidden"
+        className={`top-16 ${
+          show ? "opacity-1" : "opacity-0"
         } absolute left-0 right-0 z-50 space-y-5 flex lg:hidden flex-col text-center transition-all shadow-2xl bg-neutral-800 p-8 text-white`}
       >
         <Link
