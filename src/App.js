@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
 import Events from "./components/Events";
+import ScrollToTop from "./SrollToTop";
 
 function App() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
   }, []);
   return (
     <Router>
+      <ScrollToTop>
       <Navbar />
       <Routes>
         <Route
@@ -40,6 +42,7 @@ function App() {
         } />
       </Routes>
       <Footer />
+      </ScrollToTop>
     </Router>
   );
 }
