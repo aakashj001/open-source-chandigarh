@@ -26,10 +26,10 @@ function Navbar() {
         OpenSource Chandigarh
       </div>
       <div className="hidden lg:flex flex-[0.3_0_0%] flex-row items-center text-lg justify-between">
-        <Link to={"/"} className = "px-4 py-2 rounded-full">Home</Link>
-        <Link to={"/events"} className = "px-4 py-2 rounded-full">Events</Link>
-        <Link to={"/projects"} className = "px-4 py-2 rounded-full">Projects</Link>
-        <Link to={"/team"} className = "px-4 py-2 rounded-full">Team</Link>
+        <Link to={"/"} className = "px-4 py-2 rounded-full transition-all">Home</Link>
+        <Link to={"/events"} className = "px-4 py-2 rounded-full transition-all">Events</Link>
+        <Link to={"/projects"} className = "px-4 py-2 rounded-full transition-all">Projects</Link>
+        <Link to={"/team"} className = "px-4 py-2 rounded-full transition-all">Team</Link>
       </div>
       <div className="hidden lg:flex flex-[0.4_0_0%] justify-end">
         <button className="bg-gray-800 rounded-xl px-4 py-2 font-semibold text-white text-xl mr-4">
