@@ -1,5 +1,4 @@
 import React from 'react'
-import git from '../images/Git.png'
 import octocat from '../images/Octocat.png'
 import docker from "../images/docker.webp"
 import collabnix from "../images/Collabnix.png"

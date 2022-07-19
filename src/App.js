@@ -4,7 +4,6 @@ import Core from "./components/Core";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import Testimonials from "./components/Testimonials";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
 import Events from "./components/Events";
@@ -26,7 +25,6 @@ function App() {
               <Main />
               <Community />
               <Core />
-              {/* <Testimonials /> */}
             </>
           }
         />
