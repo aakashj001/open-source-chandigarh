@@ -6,6 +6,7 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Projects from "./components/Projects";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,11 @@ function App() {
             </>
           }
         />
+        <Route path={"/projects"} element = {
+          <>
+            <Projects />
+          </>
+        } />
       </Routes>
       <Footer />
     </Router>
