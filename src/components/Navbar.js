@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { AiOutlineMenu } from "react-icons/ai";
-import { AiOutlineArrowLeft } from "react-icons/ai";
-import { act } from "react-dom/test-utils";
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -37,8 +35,8 @@ function Navbar() {
     });
   }, [loc]);
   return (
-    <div className="sticky top-0 z-[99999] bg-white md:bg-transparent md:backdrop-blur-md flex w-screen items-center h-16 shadow-2xl">
-      <Link className="flex flex-1 md:flex-[0.4_0_0%] font-medium text-2xl ml-4 link" to={'/'}>
+    <div className="sticky top-0 z-[99999] bg-white lg:bg-transparent md:backdrop-blur-md flex w-screen items-center h-16 shadow-2xl">
+      <Link className="flex flex-1 lg:flex-[0.4_0_0%] font-medium text-2xl ml-4 link" to={'/'}>
         OpenSource Chandigarh
       </Link>
       <div className="hidden lg:flex flex-[0.3_0_0%] flex-row items-center text-lg justify-between">
@@ -65,7 +63,7 @@ function Navbar() {
       </div>
 
       <div
-        className="flex-[0.1_0_0%] md:hidden justify-end "
+        className="flex-[0.1_0_0%] lg:hidden justify-end "
         onClick={() => setShow(!show)}
       >
         <AiOutlineMenu size={25} />
@@ -73,9 +71,8 @@ function Navbar() {
       <div
         className={`top-[3.5rem] ${
           show ? "flex" : "hidden"
-        } absolute left-0 right-0 z-50 space-y-5 flex md:hidden flex-col text-center transition-all shadow-2xl bg-neutral-800 p-8 text-white`}
+        } absolute left-0 right-0 z-50 space-y-5 flex lg:hidden flex-col text-center transition-all shadow-2xl bg-neutral-800 p-8 text-white`}
       >
-        {/* <AiOutlineArrowLeft onClick={() => setShow(!show)} size={20} className="fixed top-2 left-2"/> */}
         <Link
           to={"/"}
           onClick={() => setShow(!show)}
