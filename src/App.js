@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
+import Partners from "./components/Partners";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
               <Main />
               <Community />
               <Core />
+              <Partners/>
               <Testimonials />
             </>
           }
