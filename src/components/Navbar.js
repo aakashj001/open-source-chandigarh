@@ -36,8 +36,11 @@ function Navbar() {
   }, [loc]);
   return (
     <div className="sticky top-0 z-[99999] bg-white lg:bg-transparent md:backdrop-blur-md flex w-screen items-center h-16 shadow-lg">
-      <Link className="flex flex-1 lg:flex-[0.4_0_0%] font-medium text-2xl ml-4 link" to={'/'}>
-        OpenSource Chandigarh
+      <Link
+        className="flex flex-1 lg:flex-[0.4_0_0%] font-medium text-2xl ml-4 link"
+        to={"/"}
+      >
+        OpenSource&nbsp;<font className = 'text-red-500 font-semibold'>Chandigarh</font>
       </Link>
       <div className="hidden lg:flex flex-[0.3_0_0%] flex-row items-center text-lg justify-between">
         <Link to={"/"} className="px-4 py-2 rounded-full transition-all">
@@ -66,7 +69,7 @@ function Navbar() {
         className="flex-[0.2_0_0%] flex pr-5 lg:hidden justify-end "
         onClick={() => setShow(!show)}
       >
-        {show ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={25} />}
+        {show ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </button>
       <div
         className={`top-16 ${
