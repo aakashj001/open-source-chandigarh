@@ -4,7 +4,7 @@ import heroImg from '../images/work-ic.png'
 function Main() {
   return (
     <div className="container m-auto flex flex-col justify-center items-center mt-2">
-      <img src={heroImg} alt="Hero Banner" className="w-full md:w-[70rem]"/>
+      <img src={heroImg} alt="Hero Banner" className="w-full md:w-[50rem]"/>
       <div className="font-medium text-2xl md:text-4xl text-center w-full mx-10">
         Open Source Chandigarh Powered by{" "}
         <font className="text-red-500 font-semibold">Chitkara University</font>

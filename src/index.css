@@ -5,3 +5,6 @@
 *{
     font-family: 'Poppins';
 }
+body{
+    overflow-x: hidden;
+}
