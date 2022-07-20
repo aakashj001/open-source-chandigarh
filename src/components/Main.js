@@ -10,7 +10,7 @@ function Main() {
         Open Source Chandigarh Powered by{" "}
         <font className="text-red-500 font-semibold">Chitkara University</font>
       </div>
-      <div className="font-extralight text-sm mx-8 mt-10 flex flex-col items-center justify-center md:text-xl text-center">
+      <div className="font-extralight mx-8 mt-10 flex flex-col items-center justify-center text-lg md:text-xl text-center">
         <font className="border-l border-r border-black px-4">
           To present the benefits of network effects of open-source communities
           to budding engineers and existing technicians in the Tri-city area
