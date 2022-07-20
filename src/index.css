@@ -11,8 +11,6 @@ body{
 
 .carousel {
     position: relative;
-    width: 50rem;
-    height: 25rem;
     perspective: 500px;
     transform-style: preserve-3d;
   }
