@@ -4,9 +4,13 @@ import Core from "./components/Core";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import Testimonials from "./components/Testimonials";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
+<<<<<<< HEAD
+=======
+import Events from "./components/Events";
+import ScrollToTop from "./SrollToTop";
+>>>>>>> 06dc6c983885176e990e80a9eb4e7acad2153e44
 import Partners from "./components/Partners";
 
 function App() {
@@ -15,6 +19,7 @@ function App() {
   }, []);
   return (
     <Router>
+      <ScrollToTop>
       <Navbar />
       <Routes>
         <Route
@@ -22,10 +27,14 @@ function App() {
           element={
             <>
               <Main />
+              <Partners />
               <Community />
               <Core />
+<<<<<<< HEAD
               <Partners/>
               <Testimonials />
+=======
+>>>>>>> 06dc6c983885176e990e80a9eb4e7acad2153e44
             </>
           }
         />
@@ -34,8 +43,14 @@ function App() {
             <Projects />
           </>
         } />
+        <Route path = {"/events"} element = {
+          <>
+            <Events />
+          </>
+        } />
       </Routes>
       <Footer />
+      </ScrollToTop>
     </Router>
   );
 }
