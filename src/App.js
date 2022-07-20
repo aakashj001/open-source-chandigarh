@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
 import Events from "./components/Events";
 import ScrollToTop from "./SrollToTop";
+import Partners from "./components/Partners";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
           element={
             <>
               <Main />
+              <Partners />
               <Community />
               <Core />
             </>
