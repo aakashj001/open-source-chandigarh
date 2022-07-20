@@ -4,11 +4,16 @@ import {TiChevronLeftOutline, TiChevronRightOutline} from 'https://cdn.skypack.d
 
 const MAX_VISIBILITY = 3;
 
-const Card = ({title, content}) => (
+const Card = ({title, content,img,cord}) => (
   <div className='card w-[100%] h-[100%] p-[2rem] bg-slate-400  text-slate-200 text-justify transition-all ease-out rounded-2xl border '>
+    {/* <img src={img} alt="" /> */}
     
     <h2>{title}</h2>
     <p>{content}</p>
+
+    <blockquote>
+      {/* {cord} */}
+    </blockquote>
   </div>
 );
 
@@ -25,7 +30,7 @@ const Carousel = ({children}) => {
             '--offset': (active - i) / 3,
             '--direction': Math.sign(active - i),
             '--abs-offset': Math.abs(active - i) / 3,
-            'pointer-events': active === i ? 'auto' : 'none',
+            'pointerEvents': active === i ? 'auto' : 'none',
             'opacity': Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
             'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block',
           }}>
