@@ -36,9 +36,9 @@ const array = [
 function Partners() {
   return (
     <div className=" flex flex-col items-center justify-center p-5 overflow-x-hidden">
-      <font className="text-2xl md:text-4xl mb-10 py-2 px-4 md:hover:px-8 transition-all border-b  tracking-[0.5rem] md:hover:tracking-[0.75rem] text-center">
-        Our Community Parteners
-      </font>
+      <div className='font-thin my-10 text-2xl md:text-4xl text-center border-b pb-2 px-4 border-b-black'>
+            Our Community Partners
+        </div>
 
       <Carousel>
         {array.map(element => (

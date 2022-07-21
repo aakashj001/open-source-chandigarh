@@ -21,7 +21,7 @@ function Main() {
           open-source technologies and promote the same in the Tri-City
         </font>
       </div>
-      <div className="flex flex-col md:flex-row w-full mt-5 my-10 items-center justify-center">
+      <div className="flex flex-col md:flex-row w-full my-5 items-center justify-center">
         <Link to={"/projects"} className="bg-black rounded-xl mx-5 my-2 px-4 py-2 font-medium text-white text-md md:text-xl">
           Check-Out Projects
         </Link>
