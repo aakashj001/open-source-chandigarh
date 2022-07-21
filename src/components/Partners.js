@@ -1,30 +1,34 @@
 import React from "react";
 import { Card, Carousel } from "./Carousel.js";
 import Octocat from "../images/Octocat.png";
+import docker from "../images/docker.webp";
+import collabnix from "../images/Collabnix.png";
+import apache from "../images/Apache.png";
+
 
 const array = [
   {
-    name: "Github",
+    name: "GitHub",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: { Octocat },
+    img:  Octocat ,
     cord: "Surbhi Dey (Github)",
   },
   {
     name: "Apache",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: { Octocat },
+    img:  apache ,
     cord: "Ajeet S Raina (Developer Relations Manager,Docker,Inc.)",
   },
   {
     name: "Collabnix",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: { Octocat },
-    cord: { Octocat },
+    img: collabnix ,
+    cord:  Octocat ,
   },
   {
     name: "Docker",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: { Octocat },
+    img:  docker ,
     cord: "Ajeet Raina (Developer Relations Manager, Docker, Inc.)",
   },
 ];

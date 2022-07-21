@@ -5,9 +5,10 @@ import {VscChevronRight, VscChevronLeft} from 'react-icons/vsc';
 const MAX_VISIBILITY = 3;
 
 const Card = ({title, content,img,cord}) => (
-  <div className='card h-[100%] flex flex-col p-3 md:p-[2rem] bg-neutral-800 text-center transition-all ease-out rounded-2xl'>
-    <font className="text-3xl md:text-5xl font-bold text-white py-2 border-b">{title}</font>
-    <p className="flex-1 mt-2 md:mt-5 text-white">{content}</p>
+  <div className='card h-[100%] flex flex-col items-center justify-between p-3 md:p-[2rem] bg-neutral-800 text-center transition-all ease-out rounded-2xl'>
+    <img src={img} alt="Logo for brands" className="h-24 md:h-32 object-contain" />
+    <font className="text-3xl md:text-5xl font-bold w-full text-white py-2 border-b">{title}</font>
+    <p className="hidden md:block flex-1 mt-2 md:mt-5 text-white">{content}</p>
 
     <blockquote>
       {/* {cord} */}
