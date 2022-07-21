@@ -1,5 +1,5 @@
 import React, {  useState } from "react";
-import {TiChevronLeftOutline, TiChevronRightOutline} from 'https://cdn.skypack.dev/react-icons/ti';
+import {VscChevronRight, VscChevronLeft} from 'react-icons/vsc';
 
 
 const MAX_VISIBILITY = 3;
@@ -21,7 +21,7 @@ const Carousel = ({children}) => {
   
   return (
     <div className='carousel w-[75vw] relative h-[15rem] md:w-[60vw] md:h-[20rem] lg:w-[50rem] lg:h-[25rem]'>
-      {active > 0 && <button className='text-white text-[5rem] absolute flex items-center top-[50%] z-[2] cursor-pointer translate-x-[-70%] md:translate-x-[-100%] translate-y-[-50%] ' onClick={() => setActive(i => i - 1)}><TiChevronLeftOutline/></button>}
+      {active > 0 && <button className='text-white text-[4rem] md:text-[5rem] absolute flex items-center top-[50%] z-[2] cursor-pointer translate-x-[-70%] md:translate-x-[-100%] translate-y-[-50%] ' onClick={() => setActive(i => i - 1)}><VscChevronLeft/></button>}
       {React.Children.map(children, (child, i) => (
         <div className='card-container' style={{
             '--active': i === active ? 1 : 0,
@@ -35,7 +35,7 @@ const Carousel = ({children}) => {
           {child}
         </div>
       ))}
-      {active < count - 1 && <button className='text-white text-[5rem] absolute flex items-center top-[50%] z-[2] cursor-pointer translate-x-[70vw] md:translate-x-[60vw] lg:translate-x-[1000%] translate-y-[-50%]' onClick={() => setActive(i => i + 1)}><TiChevronRightOutline/></button>}
+      {active < count - 1 && <button className='text-white text-[4rem] md:text-[5rem] absolute flex items-center top-[50%] z-[2] cursor-pointer translate-x-[72vw] md:translate-x-[62vw] lg:translate-x-[1000%] translate-y-[-50%]' onClick={() => setActive(i => i + 1)}><VscChevronRight/></button>}
     </div>
   );
 };

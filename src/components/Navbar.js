@@ -35,7 +35,7 @@ function Navbar() {
     });
   }, [loc]);
   return (
-    <div className="sticky top-0 z-[99999] bg-white lg:bg-transparent md:backdrop-blur-md flex w-screen items-center h-16 shadow-lg">
+    <div className="sticky top-0 z-[99999] bg-white flex w-screen items-center h-16 shadow-lg">
       <Link
         className="flex flex-1 lg:flex-[0.4_0_0%] font-medium text-2xl ml-4 link"
         to={"/"}
