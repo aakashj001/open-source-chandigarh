@@ -1,5 +1,5 @@
 import React from "react";
-import ProjCards from "./ProjCards";
+// import ProjCards from "./ProjCards";
 
 function Projects() {
   return (
@@ -8,12 +8,12 @@ function Projects() {
         Open-Source Projects
       </font>
       <div className="flex flex-row flex-wrap w-full justify-around mt-10">
+        {/* <ProjCards />
         <ProjCards />
         <ProjCards />
         <ProjCards />
         <ProjCards />
-        <ProjCards />
-        <ProjCards />
+        <ProjCards /> */}
       </div>
     </div>
   );
