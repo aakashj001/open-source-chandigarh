@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Carousel } from "./Carousel.js";
-import Octocat from "../images/Octocat.png";
+import Octocat from "../images/OctocatCar.png";
 import docker from "../images/docker.webp";
 import collabnix from "../images/Collabnix.png";
 import apache from "../images/Apache.png";
