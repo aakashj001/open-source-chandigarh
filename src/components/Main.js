@@ -7,7 +7,7 @@ function Main() {
     <div className="container m-auto flex flex-col justify-center items-center mt-2">
       <img src={heroImg} alt="Hero Banner" className="w-full md:w-[60rem]" />
       <div className="font-medium text-2xl md:text-4xl text-center w-full mx-10">
-        Open Source Chandigarh Powered by{" "}
+        An Open Source Community Powered by{" "}
         <font className="text-red-500 font-semibold">Chitkara University</font>
       </div>
       <div className="md:w-[80%] lg:w-[60%] font-extralight mx-8 mt-10 flex flex-col md:flex-row items-center justify-between text-lg md:text-xl text-center">

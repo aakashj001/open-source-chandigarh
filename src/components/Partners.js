@@ -5,50 +5,44 @@ import docker from "../images/docker.webp";
 import collabnix from "../images/Collabnix.png";
 import apache from "../images/Apache.png";
 
-
 const array = [
   {
-    name: "GitHub",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img:  Octocat ,
-    cord: "Surbhi Dey (Github)",
-  },
-  {
-    name: "Apache",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img:  apache ,
-    cord: "Ajeet S Raina (Developer Relations Manager,Docker,Inc.)",
+    name: "Docker",
+    des: "Docker helps developers bring their ideas to life by conquering the complexity of app development. ",
+    img: docker,
   },
   {
     name: "Collabnix",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: collabnix ,
-    cord:  Octocat ,
+    des: "Collabnix is a popular blogging site and DevOps community founded by Docker Captain Ajeet Singh Raina.",
+    img: collabnix,
   },
   {
-    name: "Docker",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img:  docker ,
-    cord: "Ajeet Raina (Developer Relations Manager, Docker, Inc.)",
+    name: "GitHub",
+    des: "GitHub, Inc. is a provider of Internet hosting for software development and version control using Git.",
+    img: Octocat,
+  },
+  {
+    name: "Apache Local Community",
+    des: "ALC comprises local groups of Apache (Open Source) enthusiasts, called an 'ALC Chapter'",
+    img: apache,
   },
 ];
 
 function Partners() {
   return (
     <div className=" flex flex-col items-center justify-center p-5 overflow-x-hidden">
-      <div className='font-thin my-10 text-2xl md:text-4xl text-center border-b pb-2 px-4 border-b-black'>
-            Our Community Partners
-        </div>
+      <div className="font-thin my-10 text-2xl md:text-4xl text-center border-b pb-2 px-4 border-b-black">
+        Our Community Partners
+      </div>
 
       <Carousel>
-        {array.map(element => (
+        {array.map((element) => (
           <Card
-          img={element.img}
-          title={element.name}
-          content={element.des}
-          cord={element.cord}
-          key = {element.name}
-        />
+            img={element.img}
+            title={element.name}
+            content={element.des}
+            key={element.name}
+          />
         ))}
       </Carousel>
     </div>
