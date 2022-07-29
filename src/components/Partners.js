@@ -4,6 +4,7 @@ import Octocat from "../images/OctocatCar.png";
 import docker from "../images/docker.webp";
 import collabnix from "../images/Collabnix.png";
 import apache from "../images/Apache.png";
+import Webiny from "../images/Webiny.png";
 
 const array = [
   {
@@ -12,14 +13,19 @@ const array = [
     img: docker,
   },
   {
-    name: "Collabnix",
-    des: "Collabnix is a popular blogging site and DevOps community founded by Docker Captain Ajeet Singh Raina.",
-    img: collabnix,
+    name: "Webiny",
+    des: "Our open source serverless CMS offers you all the enterprise-grade functionalities, while keeping your data within the security perimeter of your own infrastructure.",
+    img: Webiny,
   },
   {
     name: "GitHub",
     des: "GitHub, Inc. is a provider of Internet hosting for software development and version control using Git.",
     img: Octocat,
+  },
+  {
+    name: "Collabnix",
+    des: "Collabnix is a popular blogging site and DevOps community founded by Docker Captain Ajeet Singh Raina.",
+    img: collabnix,
   },
   {
     name: "Apache Local Community",

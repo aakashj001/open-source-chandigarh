@@ -34,6 +34,11 @@ function Footer() {
                 Docker
               </a>
             </li>
+            <li>
+              <a href="https://www.webiny.com/" target="blank">
+                Webiny
+              </a>
+            </li>
           </ul>
         </div>
         <div className="flex-1 flex items-center justify-center mb-4 md:mb-0">
