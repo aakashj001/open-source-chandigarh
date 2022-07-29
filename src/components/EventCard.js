@@ -27,13 +27,13 @@ function EventCard({ date, title, organiser, link }) {
         <div className={`fixed w-screen h-screen top-16 backdrop-blur-sm flex flex-col items-center justify-center bg-[rgba(0,0,0,0.2)]`}>
           <div className="w-3/4 h-[60vh] bg-white rounded-xl relative top-[-4rem] flex flex-col justify-around items-center py-8 px-4">
             <button className="absolute top-8 right-4" onClick={() => setShow(!show)}> <CgClose size={45}/></button>
-            <h1 className="text-5xl font-bold underline underline-offset-4">
+            <h1 className="text-3xl md:text-5xl font-bold underline underline-offset-4">
               {title}
             </h1>
-            <font className = "self-end text-2xl text-black text-right">
+            <font className = "self-end text-xl md:text-2xl text-black text-right">
               By: {<font className="text-red-500">{organiser}</font>}
               <br />
-              <font className = 'text-lg'>To know more <a href={link} className = 'text-blue-500 underline underline-offset-4' target="blank"> Click Here </a></font>
+              <font className = 'text-base md:text-lg'>To know more <a href={link} className = 'text-blue-500 underline underline-offset-4' target="blank"> Click Here </a></font>
             </font>
           </div>
         </div>
