@@ -1,5 +1,5 @@
 import React from "react";
-import EventCard from "./EventCard";
+// import EventCard from "./EventCard";
 
 function Events() {
   return (
@@ -8,10 +8,10 @@ function Events() {
         Upcoming Events
       </font>
       <div className="mt-10 flex flex-row flex-wrap items-center justify-around">
-        <EventCard date={"July 20, 2022"} title={"Inaugral"} />
+        {/* <EventCard date={"July 20, 2022"} title={"Inaugral"} />
         <EventCard date={"August 1, 2022"} title={"Open-Source Drive-I"} />
         <EventCard date={"September 5, 2022"} title={"Open-Source Drive-II"} />
-        <EventCard date={"September 23, 2022"} title={"Hackathon 48 Hrs"} />
+        <EventCard date={"September 23, 2022"} title={"Hackathon 48 Hrs"} /> */}
       </div>
     </div>
   );
