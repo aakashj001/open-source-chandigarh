@@ -6,11 +6,10 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Projects from "./components/Projects";
-<<<<<<< HEAD
-=======
+
 import Events from "./components/Events";
+import Auth from "./components/Auth";
 import ScrollToTop from "./SrollToTop";
->>>>>>> 06dc6c983885176e990e80a9eb4e7acad2153e44
 import Partners from "./components/Partners";
 
 function App() {
@@ -30,11 +29,6 @@ function App() {
               <Partners />
               <Community />
               <Core />
-<<<<<<< HEAD
-              <Partners/>
-              <Testimonials />
-=======
->>>>>>> 06dc6c983885176e990e80a9eb4e7acad2153e44
             </>
           }
         />
@@ -48,8 +42,13 @@ function App() {
             <Events />
           </>
         } />
+        <Route path = {"/login"} element = {
+          <>
+            <Auth />
+          </>
+        } />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
       </ScrollToTop>
     </Router>
   );
