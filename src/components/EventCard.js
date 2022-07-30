@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import {CgClose} from 'react-icons/cg'
 
-function EventCard({ date, title, organiser, link }) {
+function EventCard({ date, title, organiser, link,description }) {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div className="w-[27em] h-64 my-4 shadow-md bpx-border px-4 py-2 flex flex-col justify-around hover:shadow-xl transition-all" onClick={() => setShow(!show)}>
+      <div className="w-[27em] h-64 my-4 shadow-md bpx-border px-4 py-2 flex flex-col justify-around hover:shadow-xl transition-all border border-black" onClick={() => setShow(!show)}>
         <font className="font-bold text-4xl pb-2 border-b-2">
           {date ? date : "Date here"}
         </font>
@@ -30,6 +30,7 @@ function EventCard({ date, title, organiser, link }) {
             <h1 className="text-3xl md:text-5xl font-bold underline underline-offset-4">
               {title}
             </h1>
+            <p>{description}</p>
             <font className = "self-end text-xl md:text-2xl text-black text-right">
               By: {<font className="text-red-500">{organiser}</font>}
               <br />

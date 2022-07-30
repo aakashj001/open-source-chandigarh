@@ -8,7 +8,7 @@ function Events() {
   useEffect(() => {
     const fetchEvents = () => {
       axios
-        .get("http://127.0.0.1:8000/projects", {})
+        .get("http://127.0.0.1:8000/events", {})
         .then((res) => {
           setEvents(res.data);
           console.log(events.data);
@@ -31,10 +31,11 @@ function Events() {
         {events.events?.map((item) => (
           <EventCard
             key={item.id}
-            date={`5th - 6th August, 2022`}
-            title={"Docker Workshop"}
-            organiser={"Mr. Ajeet Singh Raina"}
-            link={"https://www.linkedin.com/in/ajeetsraina"}
+            date={item.date}
+            title={item.name}
+            description={item.description}
+            organiser={item.organiser}
+            link={item.register_link}
           />
         ))}
       </div>
