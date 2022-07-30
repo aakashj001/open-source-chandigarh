@@ -1,31 +1,36 @@
 import React from "react";
 import { Card, Carousel } from "./Carousel.js";
-import Octocat from "../images/Octocat.png";
+import Octocat from "../images/OctocatCar.png";
+import docker from "../images/docker.webp";
+import collabnix from "../images/Collabnix.png";
+import apache from "../images/Apache.png";
+import Webiny from "../images/Webiny.png";
 
 const array = [
   {
-    name: "Github",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: { Octocat },
-    cord: "Surbhi Dey (Github)",
+    name: "Docker",
+    des: "Docker helps developers bring their ideas to life by conquering the complexity of app development. ",
+    img: docker,
   },
   {
-    name: "Apache",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: { Octocat },
-    cord: "Ajeet S Raina (Developer Relations Manager,Docker,Inc.)",
+    name: "Webiny",
+    des: "Our open source serverless CMS offers you all the enterprise-grade functionalities, while keeping your data within the security perimeter of your own infrastructure.",
+    img: Webiny,
+  },
+  {
+    name: "GitHub",
+    des: "GitHub, Inc. is a provider of Internet hosting for software development and version control using Git.",
+    img: Octocat,
   },
   {
     name: "Collabnix",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: { Octocat },
-    cord: { Octocat },
+    des: "Collabnix is a popular blogging site and DevOps community founded by Docker Captain Ajeet Singh Raina.",
+    img: collabnix,
   },
   {
-    name: "Docker",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    img: { Octocat },
-    cord: "Ajeet Raina (Developer Relations Manager, Docker, Inc.)",
+    name: "Apache Local Community",
+    des: "ALC comprises local groups of Apache (Open Source) enthusiasts, called an 'ALC Chapter'",
+    img: apache,
   },
 ];
 
@@ -33,24 +38,22 @@ function Partners() {
   return (
 
     <div className=" flex flex-col items-center justify-center p-5 overflow-x-hidden">
-      <font className="text-2xl md:text-4xl text-slate-600 mb-10 py-2 px-4 md:hover:px-8 transition-all border-b  tracking-[0.5rem] md:hover:tracking-[0.75rem] text-center">
-        Our Technical Parteners
-      </font>
+      <div className="font-thin my-10 text-2xl md:text-4xl text-center border-b pb-2 px-4 border-b-black">
+        Our Community Partners
+      </div>
 
       <Carousel>
-        {array.map(element => (
+        {array.map((element) => (
           <Card
-          img={element.img}
-          title={element.name}
-          content={element.des}
-          cord={element.cord}
-          key = {element.name}
-        />
+            img={element.img}
+            title={element.name}
+            content={element.des}
+            key={element.name}
+          />
         ))}
       </Carousel>
     </div>
   );
 }
-
 
 export default Partners;

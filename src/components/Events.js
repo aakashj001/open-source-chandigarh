@@ -8,27 +8,17 @@ function Events() {
     setShow(!show);
   };
   return (
-    <div className=" relative">
-      <div
-        className={`container ${
-          show ? "blur-sm" : ""
-        } m-auto flex flex-col justify-center shadow-2xl md:my-10 px-4 md:px-24 py-12`}
-      >
-        <font className="text-3xl md:text-5xl md:px-2 pb-2 md:pb-4 border-b border-b-black">
-          Upcoming Events
-        </font>
-        <div className="mt-10 flex flex-row flex-wrap items-center justify-around">
-          <div onClick={() => setShow(!show)}>
-            <EventCard
-              date={"July 20, 2022"}
-              title={"Inaugural"}
-              onClick={() => setShow(!show)}
-            />
-          </div>
-          {/* <EventCard date={"August 1, 2022"} title={"Open-Source Drive-I"} />
-        <EventCard date={"September 5, 2022"} title={"Open-Source Drive-II"} />
-        <EventCard date={"September 23, 2022"} title={"Hackathon 48 Hrs"} /> */}
-        </div>
+    <div className="container m-auto flex flex-col justify-center shadow-2xl md:my-10 px-4 md:px-24 py-12">
+      <font className="text-3xl md:text-5xl md:px-2 pb-2 md:pb-4 border-b border-b-black">
+        Upcoming Events
+      </font>
+      <div className="mt-10 flex flex-row flex-wrap items-center justify-around">
+        <EventCard
+          date={`5th - 6th August, 2022`}
+          title={"Docker Workshop"}
+          organiser={"Mr. Ajeet Singh Raina"}
+          link = {'https://www.linkedin.com/in/ajeetsraina'}
+        />
       </div>
 
       {show && (
