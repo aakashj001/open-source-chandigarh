@@ -13,7 +13,7 @@ function Signup() {
   };
   const signupSubmit = (e) => {
     e.preventDefault();
-    if (signupInput.password == signupInput.rptpass) {
+    if (signupInput.password === signupInput.rptpass) {
       const data = {
         email: signupInput.email,
         password: signupInput.password,
