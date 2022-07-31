@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import EventCard from "./EventCard";
+import Loader from "./Loader";
 
 function Events() {
   const [events, setEvents] = useState({ events: [] });
@@ -30,7 +31,7 @@ function Events() {
         Upcoming Events
       </font>
       <div className="mt-10 flex flex-row flex-wrap items-center justify-around">
-        {show && <p>Loading...</p>}
+        {show && <Loader />}
         {events.events?.map((item) => (
           <EventCard
             key={item.id}
