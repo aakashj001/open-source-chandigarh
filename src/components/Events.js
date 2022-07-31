@@ -8,7 +8,7 @@ function Events() {
   useEffect(() => {
     const fetchEvents = () => {
       axios
-        .get("http://ak.iocoder.in/open/public/events", {})
+        .get("https://ak.iocoder.in/open/public/events", {})
         .then((res) => {
           setEvents(res.data);
           console.log(events.data);
