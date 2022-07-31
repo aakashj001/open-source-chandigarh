@@ -4,12 +4,14 @@ import axios from "axios";
 
 function Projects() {
   const [projects, setProjects] = useState({ projects: [] });
+  const [show, setShow] = useState(true)
 
   useEffect(() => {
     const fetchProjects = () => {
       axios
         .get("https://ak.iocoder.in/open/public/projects", {})
         .then((res) => {
+          setShow(false);
           setProjects(res.data);
           console.log(projects.projects);
         })
@@ -27,6 +29,7 @@ function Projects() {
         Open-Source Projects
       </font>
       <div className="flex flex-row flex-wrap w-full justify-around mt-10">
+        {show && <p>Loading...</p>}
         {projects.projects?.map((item) => (
           <ProjCards
             key={item.id}

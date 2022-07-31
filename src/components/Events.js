@@ -4,12 +4,14 @@ import EventCard from "./EventCard";
 
 function Events() {
   const [events, setEvents] = useState({ events: [] });
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     const fetchEvents = () => {
       axios
         .get("https://ak.iocoder.in/open/public/events", {})
         .then((res) => {
+          setShow(false)
           setEvents(res.data);
           console.log(events.data);
         })
@@ -28,6 +30,7 @@ function Events() {
         Upcoming Events
       </font>
       <div className="mt-10 flex flex-row flex-wrap items-center justify-around">
+        {show && <p>Loading...</p>}
         {events.events?.map((item) => (
           <EventCard
             key={item.id}
