@@ -8,7 +8,7 @@ function Projects() {
   useEffect(() => {
     const fetchProjects = () => {
       axios
-        .get("http://127.0.0.1:8000/projects", {})
+        .get("http://ak.iocoder.in/open/public/projects", {})
         .then((res) => {
           setProjects(res.data);
           console.log(projects.projects);

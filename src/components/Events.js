@@ -8,7 +8,7 @@ function Events() {
   useEffect(() => {
     const fetchEvents = () => {
       axios
-        .get("http://127.0.0.1:8000/events", {})
+        .get("http://ak.iocoder.in/open/public/events", {})
         .then((res) => {
           setEvents(res.data);
           console.log(events.data);
@@ -33,7 +33,7 @@ function Events() {
             key={item.id}
             date={item.date}
             title={item.name}
-            description={item.description}
+            description={item.descr}
             organiser={item.organiser}
             link={item.register_link}
           />
