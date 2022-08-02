@@ -43,7 +43,7 @@ function Navbar() {
       >
         OpenSource&nbsp;<font className = 'text-red-500 font-semibold'>Chandigarh</font>
       </Link>
-      <div className="hidden lg:flex flex-[0.3_0_0%] flex-row items-center text-lg justify-between">
+      <div className="hidden lg:flex flex-[0.35_0_0%] flex-row items-center text-lg justify-between">
         <Link to={"/"} className="px-4 py-2 rounded-full transition-all">
           Home
         </Link>
@@ -56,8 +56,8 @@ function Navbar() {
         >
           Projects
         </Link>
-        <Link to={"/team"} className="px-4 py-2 rounded-full transition-all">
-          Team
+        <Link to={"/trending"} className="px-4 py-2 rounded-full transition-all text-center">
+          Trending
         </Link>
       </div>
       <div className="hidden lg:flex flex-[0.4_0_0%] justify-end">
@@ -100,11 +100,11 @@ function Navbar() {
           Projects
         </Link>
         <Link
-          to={"/team"}
+          to={"/trending"}
           onClick={() => setShow(!show)}
           className="py-2 rounded-xl light"
         >
-          Team
+          Trending
         </Link>
       </div>
     </div>

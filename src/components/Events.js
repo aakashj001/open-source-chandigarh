@@ -14,7 +14,6 @@ function Events() {
         .then((res) => {
           setShow(false)
           setEvents(res.data);
-          console.log(events.data);
         })
         .catch((err) => {
           console.log(err);

@@ -14,7 +14,6 @@ function Projects() {
         .then((res) => {
           setShow(false);
           setProjects(res.data);
-          console.log(projects.projects);
         })
         .catch((err) => {
           console.log(err);
