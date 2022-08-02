@@ -11,6 +11,7 @@ function News() {
         .get("https://ak.iocoder.in/open/public/news", {})
         .then((res) => {
           setNews(res.data);
+          console.log(news);
         })
         .catch((err) => {
           console.log(err);
