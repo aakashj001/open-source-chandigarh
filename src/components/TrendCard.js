@@ -6,7 +6,7 @@ function TrendCard({ title, desc, link, provider }) {
       <div className="w-full text-xl md:text-3xl font-medium border-b border-black pb-2 mb-4">
         {title} {"-"} {provider}
       </div>
-      <div className="w-full text-justify md:text-xl mb-2">{desc}</div>
+      <div className="w-full text-justify lg:text-lg mb-2">{desc}</div>
       <div className="w-full flex flex-row justify-end mt-2">
         <a href={link} target = "blank" className=" px-4 py-2 text-lg bg-red-600 text-white font-medium">Learn More</a>
       </div>
