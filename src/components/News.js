@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import TrendCard from "./TrendCard";
+import Loader from './Loader'
 
 function News() {
   const [news, setNews] = useState({ news: [] });
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     const fetchNews = () => {
@@ -11,7 +13,7 @@ function News() {
         .get("https://ak.iocoder.in/open/public/news", {})
         .then((res) => {
           setNews(res.data);
-          console.log(news);
+          setShow(false)
         })
         .catch((err) => {
           console.log(err);
@@ -27,12 +29,18 @@ function News() {
         Latest in OpenSource
       </font>
       <div className="flex flex-row flex-wrap w-full justify-around mt-10">
-        <TrendCard 
-          title={"Open Source Community Involvement"}
-          link = {"https://www.ibm.com/opensource/community-involvement/"}
-          desc = {"IBM partners with most of the major open source communities that today's businesses.Our developers are collaborators and committers, encouraging open governance, contibuting code, helping with licensing, and pushing the technology forward."}
-          provider = {"IBM"}
-        />
+        {show && <Loader />}
+        {news.news?.map((ob) => (
+          <TrendCard
+            title={ob.title}
+            link={ob.url}
+            desc={
+              ob.description
+            }
+            provider={ob.provider}
+            key = {ob.id}
+          />
+        ))}
       </div>
     </div>
   );
