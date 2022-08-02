@@ -2,7 +2,7 @@ import React from "react";
 
 function TrendCard({ title, desc, link, provider }) {
   return (
-    <div className="w-full h-fit lg:h-64 shadow-lg hover:shadow-xl transition-all px-8 py-4 flex flex-col items-center justify-around">
+    <div className="w-full h-fit my-4 lg:h-64 shadow-lg hover:shadow-xl transition-all px-8 py-4 flex flex-col items-center justify-around">
       <div className="w-full text-xl md:text-3xl font-medium border-b border-black pb-2 mb-4">
         {title} {"-"} {provider}
       </div>
