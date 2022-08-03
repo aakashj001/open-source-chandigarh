@@ -4,6 +4,11 @@
 @tailwind utilities;
 *{
     font-family: 'Poppins';
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+  display: none;
 }
 body{
     overflow-x: hidden;

@@ -11,6 +11,7 @@ import Events from "./components/Events";
 import Auth from "./components/Auth";
 import ScrollToTop from "./SrollToTop";
 import Partners from "./components/Partners";
+import News from "./components/News";
 
 function App() {
   useEffect(() => {
@@ -45,6 +46,11 @@ function App() {
         <Route path = {"/login"} element = {
           <>
             <Auth />
+          </>
+        } />
+        <Route path = {"/trending"} element = {
+          <>
+            <News />
           </>
         } />
       </Routes>
