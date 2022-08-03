@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import heroImg from "../images/work-ic.jpg";
-import Video from "./Video";
 
 function Main() {
   return (
     <div className="container m-auto flex flex-col justify-center items-center mt-2">
-      <Video />
       <img src={heroImg} alt="Hero Banner" className="w-full md:w-[60rem]" />
       <div className="font-medium text-2xl md:text-4xl text-center w-full mx-10">
         An Open Source Community Powered by{" "}
