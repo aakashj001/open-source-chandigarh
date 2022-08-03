@@ -34,7 +34,7 @@ const array = [
     img: apache,
   },
   {
-    name: "Opstree",
+    name: "OpsTree",
     des: `Founded in 2014, we have grown from small team to a strong Global Family. We are bound together via a shared passion: "Desire to excel in realm of DevOps"`,
     img: Opstree,
   },

@@ -41,7 +41,7 @@ function Footer() {
             </li>
             <li>
               <a href="https://www.opstree.com/" target= "blank">
-                Opstree
+                OpsTree
               </a>
             </li>
           </ul>
