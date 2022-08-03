@@ -5,6 +5,7 @@ import docker from "../images/docker.webp";
 import collabnix from "../images/Collabnix.png";
 import apache from "../images/Apache.png";
 import Webiny from "../images/Webiny.png";
+import Opstree from "../images/opstree.png";
 
 const array = [
   {
@@ -31,6 +32,11 @@ const array = [
     name: "Apache Local Community",
     des: "ALC comprises local groups of Apache (Open Source) enthusiasts, called an 'ALC Chapter'",
     img: apache,
+  },
+  {
+    name: "Opstree",
+    des: `Founded in 2014, we have grown from small team to a strong Global Family. We are bound together via a shared passion: "Desire to excel in realm of DevOps"`,
+    img: Opstree,
   },
 ];
 

@@ -39,6 +39,11 @@ function Footer() {
                 Webiny
               </a>
             </li>
+            <li>
+              <a href="https://www.opstree.com/" target= "blank">
+                Opstree
+              </a>
+            </li>
           </ul>
         </div>
         <div className="flex-1 flex items-center justify-center mb-4 md:mb-0">
