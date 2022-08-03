@@ -12,6 +12,7 @@ import Auth from "./components/Auth";
 import ScrollToTop from "./SrollToTop";
 import Partners from "./components/Partners";
 import News from "./components/News";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
               <Main />
               <Partners />
               <Community />
+              <Testimonials/>
               <Core />
             </>
           }
