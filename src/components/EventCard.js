@@ -26,11 +26,11 @@ function EventCard({ date, title, organiser, link,description }) {
       {show && (
         <div className={`fixed w-screen h-screen top-16 backdrop-blur-sm flex flex-col items-center justify-center bg-[rgba(0,0,0,0.2)]`}>
           <div className="w-3/4 h-[60vh] bg-white rounded-xl relative top-[-4rem] flex flex-col justify-around items-center py-8 px-4">
-            <button className="absolute top-8 right-4" onClick={() => setShow(!show)}> <CgClose size={45}/></button>
+            <button className="absolute top-4 right-2 md:top-8 md:right-4 text-3xl md:text-5xl" onClick={() => setShow(!show)}> <CgClose/></button>
             <h1 className="text-3xl md:text-5xl font-bold underline underline-offset-4">
               {title}
             </h1>
-            <p>{description}</p>
+            <p className="text-xl text-justify border-b md:px-8 h-72 md:h-52 overflow-auto">{description}</p>
             <font className = "self-end text-xl md:text-2xl text-black text-right">
               By: {<font className="text-red-500">{organiser}</font>}
               <br />

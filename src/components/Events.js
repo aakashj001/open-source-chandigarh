@@ -36,7 +36,7 @@ function Events() {
             key={item.id}
             date={item.date}
             title={item.name}
-            description={item.descr}
+            description={item.description}
             organiser={item.organiser}
             link={item.register_link}
           />
