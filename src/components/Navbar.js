@@ -61,7 +61,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="hidden lg:flex flex-[0.4_0_0%] justify-end">
-        <button className="bg-gray-800 rounded-xl px-4 py-2 font-semibold text-white text-xl mr-4">
+        <button className="bg-black rounded-xl px-4 py-2 font-semibold text-white text-xl mr-4">
           Start Contributing
         </button>
       </div>
