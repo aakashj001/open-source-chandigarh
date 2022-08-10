@@ -1,4 +1,4 @@
-
+import OpenLogo from "../images/work-ic.jpg";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
@@ -41,7 +41,8 @@ function Navbar() {
         className="flex flex-1 lg:flex-[0.4_0_0%] font-medium text-2xl ml-4 link"
         to={"/"}
       >
-        OpenSource&nbsp;<font className = 'text-red-500 font-semibold'>Chandigarh</font>
+        {/* OpenSource&nbsp;<font className = 'text-red-500 font-semibold'>Chandigarh</font> */}
+        <img src={OpenLogo} alt="Community Logo" className="w-32"/>
       </Link>
       <div className="hidden lg:flex flex-[0.35_0_0%] flex-row items-center text-lg justify-between">
         <Link to={"/"} className="px-4 py-2 rounded-full transition-all">
@@ -61,7 +62,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="hidden lg:flex flex-[0.4_0_0%] justify-end">
-        <button className="bg-black rounded-xl px-4 py-2 font-semibold text-white text-xl mr-4">
+        <button className="bg-red-600 rounded-xl px-4 py-2 font-semibold text-white text-xl mr-4">
           Start Contributing
         </button>
       </div>

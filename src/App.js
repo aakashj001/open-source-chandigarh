@@ -10,7 +10,6 @@ import Projects from "./components/Projects";
 import Events from "./components/Events";
 import Auth from "./components/Auth";
 import ScrollToTop from "./SrollToTop";
-import Partners from "./components/Partners";
 import News from "./components/News";
 import Testimonials from "./components/Testimonials";
 
@@ -21,42 +20,53 @@ function App() {
   return (
     <Router>
       <ScrollToTop>
-      <Navbar />
-      <Routes>
-        <Route
-          path={"/"}
-          element={
-            <>
-              <Main />
-              <Partners />
-              <Community />
-              <Testimonials/>
-              <Core />
-            </>
-          }
-        />
-        <Route path={"/projects"} element = {
-          <>
-            <Projects />
-          </>
-        } />
-        <Route path = {"/events"} element = {
-          <>
-            <Events />
-          </>
-        } />
-        <Route path = {"/login"} element = {
-          <>
-            <Auth />
-          </>
-        } />
-        <Route path = {"/trending"} element = {
-          <>
-            <News />
-          </>
-        } />
-      </Routes>
-      <Footer />
+        <Navbar />
+        <Routes>
+          <Route
+            path={"/"}
+            element={
+              <>
+                <Main />
+                <Community />
+                <Testimonials />
+                <Core />
+              </>
+            }
+          />
+          <Route
+            path={"/projects"}
+            element={
+              <>
+                <Projects />
+              </>
+            }
+          />
+          <Route
+            path={"/events"}
+            element={
+              <>
+                <Events />
+              </>
+            }
+          />
+          <Route
+            path={"/login"}
+            element={
+              <>
+                <Auth />
+              </>
+            }
+          />
+          <Route
+            path={"/trending"}
+            element={
+              <>
+                <News />
+              </>
+            }
+          />
+        </Routes>
+        <Footer />
       </ScrollToTop>
     </Router>
   );
