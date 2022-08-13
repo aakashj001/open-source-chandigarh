@@ -8,7 +8,7 @@ function EventCard({ date, title, organiser, link, description, by }) {
   return (
     <>
       <div
-        className="w-full overflow-hidden lg:w-[90%] h-fit my-4 shadow-2xl box-border flex flex-col lg:flex-row justify-around transition-all "
+        className="w-full overflow-hidden lg:w-[80%] h-fit my-4 shadow-2xl box-border flex flex-col lg:flex-row justify-around transition-all "
         // onClick={() => setShow(!show)}
       >
         <div className="flex-1 lg:flex-[1.3_0_0%] h-full flex items-center justify-center font-bold text-4xl">
