@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CgClose } from "react-icons/cg";
-import DockerImage from "../images/docker.webp";
+import DockerImage from "../images/dockerWorkshop.png";
 import OpenLogo from "../images/work-ic.jpg";
 
 function EventCard({ date, title, organiser, link, description, by }) {
@@ -11,11 +11,11 @@ function EventCard({ date, title, organiser, link, description, by }) {
         className="w-full overflow-hidden lg:w-[90%] h-fit my-4 shadow-2xl box-border flex flex-col lg:flex-row justify-around transition-all "
         // onClick={() => setShow(!show)}
       >
-        <div className="flex-1 lg:flex-[1.3_0_0%] h-full flex items-center justify-center font-bold text-4xl pb-2 p-4">
+        <div className="flex-1 lg:flex-[1.3_0_0%] h-full flex items-center justify-center font-bold text-4xl">
           <img
             src={DockerImage}
             alt="Event Poster"
-            className="w-full object-contain"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="flex-1 flex flex-col box-border justify-between font-light">
