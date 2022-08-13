@@ -19,11 +19,11 @@ function EventCard({ date, title, organiser, link, description, by }) {
           />
         </div>
         <div className="flex-1 flex flex-col box-border justify-between font-light">
-          <div className="font-semibold flex w-full flex-row items-center justify-between p-2 box-border shadow-lg">
-            <div className="rounded-full w-20 h-20 border flex items-center justify-center overflow-hidden relative">
+          <div className="font-semibold flex w-full flex-row items-center justify-around p-2 box-border shadow-lg">
+            <div className="rounded-full w-20 lg:w-[5vw] h-20 lg:h-[5vw] border flex items-center justify-center overflow-hidden relative">
               <img src={OpenLogo} alt="Community Logo" className="scale-110" />
             </div>
-            <font className="text-[5vw] md:text-[3vw] lg:text-[1.6vw] text-right">
+            <font className="text-[5vw] md:text-[3vw] lg:text-[1.3vw] text-right">
               {by ? by : "By here"}
             </font>
           </div>
