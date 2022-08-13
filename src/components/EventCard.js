@@ -19,7 +19,7 @@ function EventCard({ date, title, organiser, link, description, by }) {
           />
         </div>
         <div className="flex-1 flex flex-col box-border justify-between font-light">
-          <div className="font-semibold mt-4 md:mt-8 flex w-full flex-row items-center justify-between p-2 box-border shadow-lg">
+          <div className="font-semibold flex w-full flex-row items-center justify-between p-2 box-border shadow-lg">
             <div className="rounded-full w-20 h-20 border flex items-center justify-center overflow-hidden relative">
               <img src={OpenLogo} alt="Community Logo" className="scale-110" />
             </div>
