@@ -19,7 +19,7 @@ function EventCard({ date, title, organiser, link, description, by }) {
           />
         </div>
         <div className="flex-1 flex flex-col box-border justify-between font-light">
-          <div className="font-semibold mt-4 md:mt-8 flex w-full flex-row items-center justify-between px-2 box-border">
+          <div className="font-semibold mt-4 md:mt-8 flex w-full flex-row items-center justify-between p-2 box-border shadow-lg">
             <div className="rounded-full w-20 h-20 border flex items-center justify-center overflow-hidden relative">
               <img src={OpenLogo} alt="Community Logo" className="scale-110" />
             </div>
@@ -27,8 +27,9 @@ function EventCard({ date, title, organiser, link, description, by }) {
               {by ? by : "By here"}
             </font>
           </div>
-          <div className=" text-center text-3xl lg:text-2xl xl:text-4xl">
-            {title ? title : "Title here"}
+          <div className=" text-center text-3xl lg:text-2xl xl:text-4xl relative flex items-center justify-center mt-4">
+            <div className="w-full border-t-2 border-black absolute z-[-1]"></div>
+            <font className = "bg-white px-4">{title ? title : "Title here"}</font>
           </div>
           <p className="flex-1 overflow-scroll hidden lg:flex mt-5 text-sm xl:text-xl items-center text-justify px-8">
             {description}
