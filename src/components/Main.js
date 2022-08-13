@@ -56,7 +56,7 @@ function Main() {
       </div>
       <div className="w-full flex flex-row items-center justify-around flex-wrap">
         {images.map((image) => (
-          <a href={image.link} target = "blank"><img src={image.image} alt = {image.name} className = 'w-20 md:w-24 m-2 lg:w-32'/></a>
+          <a href={image.link} target = "blank" key={image.link}><img src={image.image} alt = {image.name} className = 'w-20 md:w-24 m-2 lg:w-32'/></a>
         ))}
       </div>
       <div className="md:w-[80%] lg:w-[60%] font-extralight mx-8 mt-10 flex flex-col md:flex-row items-center justify-between text-lg md:text-xl text-center">
